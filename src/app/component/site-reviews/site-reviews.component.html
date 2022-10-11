@@ -1,0 +1,26 @@
+<h1 class="title">Reseñas</h1>
+<p class="subtitle">
+    Nuestros clientes nos recomiendan, contamos con una <strong>calificación de 4,8</strong> en Facebook con 29 opiniones
+</p>
+<div class="columns is-multiline-tablet is-mobile is-vcentered">
+    <div class="column is-one-third-tablet is-three-quarters-mobile" *ngFor="let review of reviews">
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="assets/img/facebook-6.svg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">{{ review.name }}</p>
+                        <p class="subtitle is-6">Recomienda Rinnovo</p>
+                    </div>
+                </div>
+                <div class="content">
+                    {{ review.comment }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

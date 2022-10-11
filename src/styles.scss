@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #e91e63;
+@import 'bulma/bulma.sass';
+
+.is-multiline-tablet {
+    @include mobile {
+        overflow-x: scroll;
+    }
+    @include tablet {
+        flex-wrap: wrap;
+    }
+}
+
+.hero-rounded {
+    @include tablet {
+        border-radius: 5px;
+        > div {
+            border-radius: 5px;
+        }
+    }
+}
